@@ -456,6 +456,46 @@ textarea {
     outline-color: #fd57bf;
 }
 
+input [type="submit"] {
+    width: initial;
+    background-color: white;
+    color: black;
+    padding: 1rem 2rem;
+    border: none;
+    border-radius: 0.8rem;
+    cursor: pointer;
+    transition: background-color 650ms;
+}
+
+input [type="submit"]:hover {
+    color: #221e3f;
+    background-color: #ffe838;
+
+}
+
+.copyright {
+    width: 100%;
+    text-align: center;
+    background-color: #16162d;
+    padding: 2rem 0;
+    position: relative;
+}
+
+.up {
+    position: absolute;
+    width: 5rem;
+    height: 5rem;
+    background-color: #eee;
+    top: -2.5rem;
+    right: 5rem;
+    border-radius: 100%;
+}
+
+.up i {
+    color: #221e3f;
+    font-size: 2rem;
+}
+
 /*End contact*/
 
 /*Start footer*/
