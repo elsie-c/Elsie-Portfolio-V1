@@ -8,14 +8,14 @@
 
 html {
     font-size: 10px;
-    font-family: "roboto", sans-serif;
+    font-family: 'Roboto', monospace;
     color: #eee;
 }
 
 body {
     width: 100%;
     height: 100%;
-    background: url("Images/sitebg.jpg") no-repeat center fixed;
+    background: #1E1F20 no-repeat center fixed;
     background-size: cover;
 }
 
@@ -78,13 +78,6 @@ img {
     border-radius: 0.8rem;
 }
 
-.section-heading h1::after {
-    width: 1.5rem;
-    height: 1.5rem;
-    border-radius: 100%;
-    bottom: -1rem;
-}
-
 .section-heading h6 {
     font-size: 1.6rem;
     font-weight: 300;
@@ -107,7 +100,7 @@ header {
     height: 100vh;
     position: fixed;
     top: -100vh;
-    background-color: #16162d;
+    background-color: #333333;
     border-bottom-right-radius: 100%;
     border-bottom-left-radius: 100%;
     transition: all 650ms;
@@ -129,14 +122,14 @@ li {
 
 
 .nav-link {
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Roboto', monospace;
     font-size: 5rem;
     padding: 1rem;
 }
 
 .nav-link:hover,
 .nav-link:focus {
-    background: linear-gradient(to top, #ffe838, #fd57bf#ffe838, #fd57bf);
+    background: linear-gradient(to top, #ffe838, #00F2AE);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     ;
@@ -166,7 +159,7 @@ li {
 }
 
 .bar {
-    background: linear-gradient(to right, #ffe838, #fd57bf);
+    background: linear-gradient(to right, #00F2AE, #eee);
     width: 100%;
     height: 4px;
     border-radius: .8rem;
@@ -207,8 +200,9 @@ li {
 
 .landing-text h1 {
     font-size: 10rem;
-    font-family: 'Staatliches', cursive;
-    background: linear-gradient(to top, #ffe838, #fd57bf);
+    font-family: 'Oswald', sans-serif;
+    text-transform: uppercase;
+    background: #00F2AE;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     padding: 1rem;
@@ -301,15 +295,15 @@ li {
 .icon-container {
     width: 10rem;
     height: 10rem;
-    border: 3px solid #ffe838;
-    background-color: #fd57bf;
+    border: 3px solid #00F2AE;
+    background-color: transparent;
     display: flex;
     margin-bottom: 2rem;
     transform: rotate(45deg);
 }
 
 .icon-container i {
-    color: #ffe838;
+    color: #00F2AE;
     font-size: 5rem;
     margin: auto;
     transform: rotate(-45deg);
@@ -371,7 +365,7 @@ li {
 
 /*Start timeline*/
 .timeline ul {
-    border-left: 4px solid #ffe838;
+    border-left: 4px solid #00F2AE;
     border-radius: 0.8rem;
     background-color: rgba(0, 0, 0, 0.05);
     margin: 0 auto;
@@ -421,7 +415,7 @@ li {
 
 .timeline .date::after {
     content: "";
-    box-shadow: 0 0 0 4px #fd57bf;
+    box-shadow: 0 0 0 4px #00F2AE;
     border-radius: 100%;
     left: -8rem;
     height: 1.5rem;
@@ -433,7 +427,7 @@ li {
 
 /*Start contact*/
 .contact {
-    background-color: #221e3f;
+    background-color: #1E1F20;
 }
 
 form {
@@ -452,12 +446,12 @@ textarea {
     padding: 1rem;
     margin-bottom: 5px;
     border: none;
-    outline-color: #fd57bf;
+    outline-color: #00F2AE;
 }
 
 input[type="submit"] {
     width: initial;
-    background-color: #fd57bf;
+    background-color: #333333;
     color: #eee;
     padding: 1rem 2rem;
     border: none;
@@ -468,7 +462,7 @@ input[type="submit"] {
 
 input[type="submit"]:hover {
     color: #221e3f;
-    background-color: #ffe838;
+    background-color: #00F2AE;
 
 }
 
@@ -478,7 +472,7 @@ input[type="submit"]:hover {
 .copyright {
     width: 100%;
     text-align: center;
-    background-color: #16162d;
+    background-color: #1E1F20;
     padding: 2rem 0;
     position: relative;
 }
@@ -511,15 +505,15 @@ input[type="submit"]:hover {
 /*Start animations*/
 @keyframes pulse {
     0% {
-        box-shadow: 0 0 0 0 rgba(253, 87, 191, 0.99);
+        box-shadow: 0 0 0 0 rgba(0, 242, 174, 0.99);
     }
 
     70% {
-        box-shadow: 0 0 0 2rem rgba(253, 87, 191, 0);
+        box-shadow: 0 0 0 2rem rgba(0, 242, 174, 0);
     }
 
     100% {
-        box-shadow: 0 0 0 0 rgba(253, 87, 191, 0);
+        box-shadow: 0 0 0 0 rgba(0, 242, 174, 0);
     }
 }
 
@@ -529,8 +523,7 @@ input[type="submit"]:hover {
 
 @media screen and (max-width: 768px) {
     body {
-
-        background: url("Images/sitebg2.jpg") no-repeat center fixed;
+        background: #1E1F20 no-repeat center fixed;
         background-size: cover;
     }
 
@@ -652,3 +645,48 @@ input[type="submit"]:hover {
 }
 
 /*End media queries*/
+
+
+/* Style the tab */
+.tab {
+    float: left;
+    border: 1px solid #ccc;
+    background-color: #f1f1f1;
+    width: 30%;
+    height: 300px;
+}
+
+/* Style the buttons inside the tab */
+.tab button {
+    display: block;
+    background-color: inherit;
+    color: black;
+    padding: 22px 16px;
+    width: 100%;
+    border: none;
+    outline: none;
+    text-align: left;
+    cursor: pointer;
+    transition: 0.3s;
+    font-size: 17px;
+}
+
+/* Change background color of buttons on hover */
+.tab button:hover {
+    background-color: #ddd;
+}
+
+/* Create an active/current "tab button" class */
+.tab button.active {
+    background-color: #ccc;
+}
+
+/* Style the tab content */
+.tabcontent {
+    float: left;
+    padding: 0px 12px;
+    border: 1px solid #ccc;
+    width: 70%;
+    border-left: none;
+    height: 300px;
+}
