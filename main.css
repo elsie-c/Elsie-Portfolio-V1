@@ -26,7 +26,7 @@
     -ms-transform: scale(0.8, 0.8);
     -o-transform: scale(0.8, 0.8);
     transform: scale(0.8, 0.8);
-    -webkit-box-reflect: below 170px -webkit-gradient(linear, left top, left bottom, from(transparent), color-stop(0%, transparent), to(rgba(250, 250, 250, 0.1)));
+    -webkit-box-reflect: below 150px -webkit-gradient(linear, right top, right bottom, from(transparent), color-stop(40%, transparent), to(rgba(255, 255, 255, 0.1)));
 }
 
 .cube {
@@ -44,6 +44,7 @@
     -ms-transform: rotateX(136deg) rotateY(1122deg);
     -o-transform: rotateX(136deg) rotateY(1122deg);
     transform: rotateX(136deg) rotateY(1122deg);
+
 }
 
 .cube>div {
@@ -63,6 +64,7 @@
     -ms-user-select: none;
     -o-user-select: none;
     user-select: none;
+
 }
 
 .cube>div>div.cube-image {
@@ -74,15 +76,26 @@
     -o-transform: rotate(180deg);
     transform: rotate(180deg);
     line-height: 190px;
-    font-size: 20px;
+    font-size: 18px;
     font-family: 'IBM Plex Mono', monospace;
     text-align: center;
-    color: #ffffff;
+    color: #aaaaaa;
     -webkit-transition: color 600ms;
     -moz-transition: color 600ms;
     -ms-transition: color 600ms;
     -o-transition: color 600ms;
     transition: color 600ms;
+    animation: spinning 2s infinite;
+}
+
+.paragraph-section {
+    font-family: "Roboto", sans-serif;
+    line-height: 25px;
+}
+
+.move-me {
+    margin: 100px;
+    position: relative;
 }
 
 .cube>div>div.cube-image.active {
@@ -186,7 +199,7 @@ object:hover {
 }
 
 .text {
-    color: #00F2AE;
+    color: rgb(134, 187, 171);
     font-size: 12px;
     font-weight: 300;
 }
@@ -211,7 +224,7 @@ object:hover {
     height: 50px;
     -webkit-box-sizing: border-box;
     box-sizing: border-box;
-    border: 5px solid #00F2AE;
+    border: 15px solid rgb(242, 238, 0);
     opacity: .7;
     -webkit-animation: color 7s cubic-bezier(0.75, 0, 0.5, 1) infinite;
     animation: color 7s cubic-bezier(0.75, 0, 0.5, 1) infinite;
@@ -273,55 +286,55 @@ object:hover {
 
 @-webkit-keyframes color {
     0% {
-        border: 5px solid #333333;
-        background: #00F2AE;
+        border: 2px solid #333333;
+        background: #018661;
     }
 
     25% {
-        border: 5px solid #00F2AE;
+        border: 2px solid #018661;
         background: #333333;
     }
 
     50% {
-        border: 5px solid #333333;
-        background: #00F2AE;
+        border: 2px solid #333333;
+        background: #018661;
     }
 
     75% {
-        border: 5px solid #00F2AE;
+        border: 2px solid #018661;
         background: #333333;
     }
 
     100% {
-        border: 5px solid #333333;
-        background: #00F2AE;
+        border: 2px solid #333333;
+        background: #018661;
     }
 }
 
 @keyframes color {
     0% {
-        border: 5px solid #333333;
-        background: #00F2AE;
+        border: 2px solid #333333;
+        background: #018661;
     }
 
     25% {
-        border: 5px solid #00F2AE;
+        border: 2px solid #018661;
         background: #333333;
     }
 
     50% {
-        border: 5px solid #333333;
-        background: #00F2AE;
+        border: 2px solid #333333;
+        background: #018661;
     }
 
     75% {
-        border: 5px solid #00F2AE;
+        border: 2px solid #018661;
         background: #333333;
     }
 
     100% {
-        border: 5px solid #333333;
-        background: #00F2AE;
+        border: 1px solid #333333;
+        background: #018661;
     }
 }
 
@@ -337,7 +350,7 @@ object:hover {
 
 html {
     font-size: 10px;
-    font-family: 'Roboto', monospace;
+    font-family: 'Oswald', monospace;
     color: #eee;
 }
 
@@ -357,6 +370,7 @@ section {
 a {
     text-decoration: none;
     color: #eee;
+
 }
 
 p {
@@ -453,17 +467,20 @@ li {
 
 
 .nav-link {
-    font-family: 'Roboto', monospace;
+    font-family: 'Oswald', monospace;
     font-size: 5rem;
     padding: 1rem;
 }
 
 .nav-link:hover,
 .nav-link:focus {
-    background: linear-gradient(to top, #ffe838, #00F2AE);
+    background: rgb(1, 134, 97);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-    ;
+}
+
+.nav-link:hover {
+    transition: 1s;
 }
 
 .top-nav.open {
@@ -490,7 +507,7 @@ li {
 }
 
 .bar {
-    background: linear-gradient(to right, #00F2AE, #eee);
+    background: linear-gradient(to right, rgb(1, 134, 97), #eee);
     width: 100%;
     height: 4px;
     border-radius: .8rem;
@@ -533,7 +550,7 @@ li {
     font-size: 10rem;
     font-family: 'Oswald', sans-serif;
     text-transform: uppercase;
-    background: #00F2AE;
+    background: rgb(1, 134, 97);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     padding: 1rem;
@@ -626,7 +643,7 @@ li {
 .icon-container {
     width: 10rem;
     height: 10rem;
-    border: 3px solid #00F2AE;
+    border: 3px solid rgb(1, 134, 97);
     background-color: transparent;
     display: flex;
     margin-bottom: 2rem;
@@ -634,7 +651,7 @@ li {
 }
 
 .icon-container i {
-    color: #00F2AE;
+    color: rgb(1, 134, 97);
     font-size: 5rem;
     margin: auto;
     transform: rotate(-45deg);
@@ -721,7 +738,8 @@ textarea {
     padding: 1rem;
     margin-bottom: 5px;
     border: none;
-    outline-color: #00F2AE;
+    outline-color: rgb(1, 134, 97);
+    ;
 }
 
 input[type="submit"] {
@@ -737,7 +755,7 @@ input[type="submit"] {
 
 input[type="submit"]:hover {
     color: #221e3f;
-    background-color: #00F2AE;
+    background-color: rgb(1, 134, 97);
 
 }
 
@@ -928,7 +946,7 @@ input[type="submit"]:hover {
 
 .tab {
     float: left;
-    border-left: 5px solid#00F2AE;
+    border-left: 5px solid rgb(1, 134, 97);
     background-color: #2A2B2D;
     width: 20%;
     display: flex;
@@ -954,7 +972,7 @@ input[type="submit"]:hover {
 /* Change background color of buttons on hover */
 .tab button:hover {
     background-color: rgb(77, 77, 77);
-    border-left: 20px solid #00F2AE;
+    border-left: 20px solid rgb(1, 134, 97);
 }
 
 /* Create an active/current "tab button" class */
