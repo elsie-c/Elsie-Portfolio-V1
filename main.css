@@ -89,8 +89,14 @@
 }
 
 .paragraph-section {
-    font-family: "Roboto", sans-serif;
+    font-family: 'Roboto Mono', monospace;
     line-height: 25px;
+    text-align: justify;
+    text-justify: inter-word;
+}
+
+.about {
+    font-size: 16px;
 }
 
 .move-me {
