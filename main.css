@@ -458,6 +458,27 @@ header {
     z-index: 50;
 }
 
+
+.main-left {
+    background: transparent;
+    height: 1200px;
+    width: 20%;
+    float: left;
+    position: relative;
+}
+
+.left-sticky {
+    align-items: center;
+    justify-content: center;
+    top: 20px;
+    height: 300px;
+    width: 200px;
+    position: sticky;
+    -webkit-position: sticky;
+    display: flex;
+}
+
+
 .nav-list {
     list-style: none;
     width: 100%;
