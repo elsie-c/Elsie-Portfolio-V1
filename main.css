@@ -12,11 +12,13 @@
 
 /*vertical line sidebar (left)*/
 .vl {
-    border-left: 6px solid green;
-    height: 500px;
-    position: absolute;
-    left: 50%;
-    top: 0;
+    content: "";
+    display: block;
+    width: 1px;
+    height: 90px;
+    background-color: rgb(168, 178, 209);
+    margin: 0px auto;
+    box-sizing: inherit;
 }
 
 .viewport {
