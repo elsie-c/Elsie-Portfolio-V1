@@ -10,16 +10,7 @@
     padding-top: 5%;
 }
 
-/*vertical line sidebar (left)*/
-.vl {
-    content: "";
-    display: block;
-    width: 1px;
-    height: 90px;
-    background-color: rgb(168, 178, 209);
-    margin: 0px auto;
-    box-sizing: inherit;
-}
+
 
 .viewport {
     -webkit-perspective: 800px;
@@ -469,13 +460,25 @@ header {
     z-index: 50;
 }
 
+/*LEFTBAR */
+
+/*vertical line sidebar (left)*/
+.vl {
+    content: "";
+    display: block;
+    width: 1px;
+    height: 90px;
+    background-color: rgb(168, 178, 209);
+    margin: 0px auto;
+    box-sizing: inherit;
+}
 
 .main-left {
     width: 150px;
     position: fixed;
     z-index: 1;
-    top: 300px;
-    left: 10px;
+    top: 550px;
+    left: 0px;
     background: transparent;
     overflow-x: hidden;
     padding: 8px 0;
@@ -497,9 +500,9 @@ header {
 .left-sticky a {
     display: flex;
     flex-direction: column;
+    margin: 10px;
+    padding: 5px;
 }
-
-
 
 .social-media i {
     font-size: 3rem;
@@ -523,6 +526,44 @@ li {
     margin: 0 2rem;
 }
 
+/*RIGHT SIDE BAR*/
+.vl-right {
+    content: "";
+    display: block;
+    width: 1px;
+    height: 90px;
+    background-color: rgb(168, 178, 209);
+    margin: 0px auto;
+    box-sizing: inherit;
+}
+
+.main-right {
+    width: 150px;
+    position: fixed;
+    z-index: 1;
+    top: 600px;
+    right: 0px;
+    background: transparent;
+    overflow-x: hidden;
+    padding: 8px 0;
+    display: block;
+}
+
+
+.email {
+    writing-mode: vertical-rl;
+    top: 0;
+    font-size: 15px;
+    font-family: 'IBM Plex Mono', monospaces;
+    display: flex;
+    align-items: center;
+    margin: 15px 67px;
+}
+
+.email:hover {
+    color: rgb(1, 134, 97);
+    transition: 0.5s;
+}
 
 .nav-link {
     font-family: 'Oswald', monospace;
