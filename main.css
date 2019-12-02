@@ -1,5 +1,7 @@
+/*font import*/
 @import url('https://fonts.googleapis.com/css?family=Public+Sans&display=swap');
 
+/*html background/denote universal selector*/
 *,
 *:before,
 *:after {
@@ -10,15 +12,7 @@
     padding: 0;
 }
 
-
-
-
-
-#wrapper {
-    padding-top: 5%;
-}
-
-
+/*header/navbar setting*/
 header {
     width: 100%;
     display: flex;
@@ -31,7 +25,6 @@ header {
     border-bottom: 1px solid #db963b;
     font-size: 14px;
     font-family: 'IBM Plex Mono', monospace;
-
 }
 
 .logo {
@@ -63,11 +56,9 @@ header {
 .resume-button {
     padding: 9px 15px;
     margin-left: 50px;
-
     background-color: transparent;
     border: 1px solid #db963b;
     border-radius: 0px;
-
     cursor: pointer;
     color: #db963b;
     font-size: 14px;
@@ -80,6 +71,18 @@ header {
     color: #db963b;
     transition: all 500ms ease 100ms;
 }
+
+/*main content*/
+
+
+
+
+#wrapper {
+    padding-top: 5%;
+}
+
+
+
 
 
 .main-content {
