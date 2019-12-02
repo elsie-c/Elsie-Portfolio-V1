@@ -1,36 +1,90 @@
+@import url('https://fonts.googleapis.com/css?family=Public+Sans&display=swap');
+
 *,
 *:before,
 *:after {
     -moz-box-sizing: border-box;
     -webkit-box-sizing: border-box;
     box-sizing: border-box;
+    margin: 0;
+    padding: 0;
 }
+
+
+
+
 
 #wrapper {
     padding-top: 5%;
 }
 
-@import url('https://fonts.googleapis.com/css?family=Montserrat:400,500&display=swap');
-
-li,
-a,
-button {
-    font-family: 'Montserrat', sans-serif;
-    font-weight: 500;
-    font-size: 16px;
-    color: #ecf0f1;
-    text-decoration: none;
-
-}
 
 header {
+    width: 100%;
     display: flex;
-    justify-content: space-between;
+    justify-content: flex-end;
     align-items: center;
-    padding: 30px 10%;
+    padding: 10px 2.5%;
+    position: fixed;
+    background-color: black;
+    z-index: 9999;
+    border-bottom: 1px solid #db963b;
+    font-size: 14px;
+    font-family: 'IBM Plex Mono', monospace;
+
+}
+
+.logo {
+    cursor: pointer;
+    margin-right: auto;
+}
+
+.nav__links {
+    list-style: none;
+}
+
+.nav__links li {
+    display: inline-block;
+    padding: 10px;
+    margin: 5px;
+}
+
+.nav__links li a {
+    transition: all 0.3s ease 0s;
+    color: #db963b;
+    margin: 0;
+}
+
+.nav__links li a:hover {
+    transition: all 0.3s ease 0s;
+    color: #ffffff;
+}
+
+.resume-button {
+    padding: 9px 15px;
+    margin-left: 50px;
+
+    background-color: transparent;
+    border: 1px solid #db963b;
+    border-radius: 0px;
+
+    cursor: pointer;
+    color: #db963b;
+    font-size: 14px;
+    font-family: 'IBM Plex Mono', monospace;
+    transition: all 0.3 ease 0s;
+}
+
+.resume-button:hover {
+    background-color: #4b3313;
+    color: #db963b;
+    transition: all 500ms ease 100ms;
 }
 
 
+.main-content {
+    margin-top: 150px;
+}
 
 .viewport {
     -webkit-perspective: 800px;
@@ -227,9 +281,15 @@ object:hover {
 }
 
 .text {
-    color: rgb(134, 187, 171);
+    color: #db963b;
     font-size: 12px;
     font-weight: 300;
+}
+
+.logo {
+    width: 70px;
+    height: 70px;
+    padding: 10px;
 }
 
 .font {
@@ -315,54 +375,54 @@ object:hover {
 @-webkit-keyframes color {
     0% {
         border: 2px solid #333333;
-        background: #018661;
+        background: #db963b;
     }
 
     25% {
-        border: 2px solid #018661;
+        border: 2px solid #db963b;
         background: #333333;
     }
 
     50% {
         border: 2px solid #333333;
-        background: #018661;
+        background: #db963b;
     }
 
     75% {
-        border: 2px solid #018661;
+        border: 2px solid#db963b;
         background: #333333;
     }
 
     100% {
         border: 2px solid #333333;
-        background: #018661;
+        background: #db963b;
     }
 }
 
 @keyframes color {
     0% {
         border: 2px solid #333333;
-        background: #018661;
+        background: #db963b;
     }
 
     25% {
-        border: 2px solid #018661;
+        border: 2px solid #db963b;
         background: #333333;
     }
 
     50% {
         border: 2px solid #333333;
-        background: #018661;
+        background: #db963b;
     }
 
     75% {
-        border: 2px solid #018661;
+        border: 2px solid #db963b;
         background: #333333;
     }
 
     100% {
         border: 1px solid #333333;
-        background: #018661;
+        background: #db963b;
     }
 }
 
@@ -385,7 +445,7 @@ html {
 body {
     width: 100%;
     height: 100%;
-    background: #1E1F20 no-repeat center fixed;
+    background: rgb(14, 15, 15) no-repeat center fixed;
     background-size: cover;
     display: flex;
     flex-direction: column;
@@ -463,12 +523,11 @@ img {
 /*End reusable*/
 
 /*Start header*/
-header {
+/* header {
     width: 100%;
     height: 100vh;
-}
-
-.top-nav {
+} */
+/* .top-nav {
     width: 100%;
     height: 100vh;
     position: fixed;
@@ -478,7 +537,7 @@ header {
     border-bottom-left-radius: 100%;
     transition: all 650ms;
     z-index: 50;
-}
+} */
 
 /*LEFTBAR */
 
@@ -530,7 +589,7 @@ header {
 }
 
 .social-media i:hover {
-    color: rgb(1, 134, 97);
+    color: #db963b;
 }
 
 .nav-list {
@@ -581,7 +640,7 @@ li {
 }
 
 .email:hover {
-    color: rgb(1, 134, 97);
+    color: #db963b;
     transition: 0.5s;
     cursor: pointer;
 }
@@ -594,7 +653,7 @@ li {
 
 .nav-link:hover,
 .nav-link:focus {
-    background: rgb(1, 134, 97);
+    background: #db963b;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
@@ -627,7 +686,7 @@ li {
 }
 
 .bar {
-    background: linear-gradient(to right, rgb(1, 134, 97), #eee);
+    background: linear-gradient(to right, #db963b; , #eee);
     width: 100%;
     height: 4px;
     border-radius: .8rem;
@@ -670,7 +729,7 @@ li {
     font-size: 10rem;
     font-family: 'Oswald', sans-serif;
     text-transform: uppercase;
-    background: rgb(1, 134, 97);
+    background: #db963b;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     padding: 1rem;
@@ -842,7 +901,7 @@ textarea {
     padding: 1rem;
     margin-bottom: 5px;
     border: none;
-    outline-color: rgb(1, 134, 97);
+    outline-color: #db963b;
     ;
 }
 
@@ -902,15 +961,18 @@ input[type="submit"]:hover {
 /*Start animations*/
 @keyframes pulse {
     0% {
-        box-shadow: 0 0 0 0 rgba(0, 242, 174, 0.99);
+        box-shadow: 0 0 0 0 #db963b;
+        ;
     }
 
     70% {
-        box-shadow: 0 0 0 2rem rgba(0, 242, 174, 0);
+        box-shadow: 0 0 0 2rem #db963b;
+        ;
     }
 
     100% {
-        box-shadow: 0 0 0 0 rgba(0, 242, 174, 0);
+        box-shadow: 0 0 0 0#db963b;
+        ;
     }
 }
 
@@ -1050,7 +1112,7 @@ input[type="submit"]:hover {
 
 .tab {
     float: left;
-    border-left: 5px solid rgb(1, 134, 97);
+    border-left: 5px solid#db963b;
     background-color: #2A2B2D;
     width: 20%;
     display: flex;
@@ -1076,7 +1138,8 @@ input[type="submit"]:hover {
 /* Change background color of buttons on hover */
 .tab button:hover {
     background-color: rgb(77, 77, 77);
-    border-left: 20px solid rgb(1, 134, 97);
+    border-left: 20px solid #db963b;
+    ;
 }
 
 /* Create an active/current "tab button" class */
