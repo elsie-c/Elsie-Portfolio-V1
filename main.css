@@ -10,6 +10,26 @@
     padding-top: 5%;
 }
 
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,500&display=swap');
+
+li,
+a,
+button {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    color: #ecf0f1;
+    text-decoration: none;
+
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 10%;
+}
+
 
 
 .viewport {
@@ -91,7 +111,7 @@
 }
 
 .paragraph-section {
-    font-family: 'Roboto Mono', monospace;
+    font-family: 'Roboto', sans-serif;
     line-height: 25px;
     text-align: justify;
     text-justify: inter-word;
@@ -563,6 +583,7 @@ li {
 .email:hover {
     color: rgb(1, 134, 97);
     transition: 0.5s;
+    cursor: pointer;
 }
 
 .nav-link {
