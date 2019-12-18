@@ -810,7 +810,7 @@ li {
 
 /*End services*/
 
-/*Start portfolio*/
+/*Start publication*/
 .portfolio-item {
     display: flex;
     align-items: center;
@@ -858,7 +858,7 @@ li {
     color: #2f67cd;
 }
 
-/*End portfolio*/
+/*End publication*/
 
 /*work experience starts*/
 /* Style the tab */
@@ -1025,14 +1025,19 @@ h3 {
 
 /*photo seciton ends*/
 
-/*publications starts*/
-
+/*portfolio starts*/
   .text-center {
     text-align: center;
   }
   
   .color-white {
     color: #fff;
+  }
+
+  .listoftools {
+      color: #b17930;
+      font-family: 'IBM Plex Mono', monospace;
+  
   }
   
   .box-container {
@@ -1046,7 +1051,7 @@ h3 {
   
   @media screen and (min-width:1380px) {
     .box-container {
-      flex-direction: row
+      flex-direction: row;
     }
   }
   
@@ -1138,30 +1143,31 @@ h3 {
   
   .flip-box-header {
     font-size: 20px;
+    text-transform: uppercase;
   }
   
   .flip-box p {
-    font-size: 16px;
+    font-size: 1.3em;
     line-height: 1.5em;
   }
   
   .flip-box-img {
-    margin-top: 25px;
+    margin-top: 35px;
   }
   
   .flip-box-button {
     background-color: transparent;
     border: 2px solid #fff;
-    border-radius: 20px;
+    border-radius: 1px;
     color: #fff;
     cursor: pointer;
-    font-size: 5px;
+    font-size: 15px;
     font-weight: bold;
-    margin-top: 25px;
+    margin-top: 20px;
     padding: 15px 20px;
-    text-transform: uppercase;
+    font-family: 'IBM Plex Mono', monospace;
   }
-/*publication ends*/
+/*portfolio ends*/
 
 /*Start footer*/
 
