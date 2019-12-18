@@ -1037,15 +1037,19 @@ h3 {
   .listoftools {
       color: #b17930;
       font-family: 'IBM Plex Mono', monospace;
-  
+  }
+
+  .back-para {
+      font-size: 12px;
+      font-family: 'IBM Plex Mono', monospace;
   }
   
   .box-container {
     align-items: center;
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     justify-content: space-around;
-    padding: 35px 15px;
+    padding: 10px 15px;
     width: 100%;
   }
   
