@@ -162,7 +162,7 @@ header {
 }
 
 .paragraph-section {
-    font-family: 'Roboto', sans-serif;
+    font-family: 'IBM Plex Mono', monospace;
     line-height: 25px;
     text-align: justify;
     text-justify: inter-word;
@@ -957,8 +957,8 @@ h3 {
 
 /*photo section*/
 .slidershow{
-    width: 700px;
-    height: 400px;
+    width: 800px;
+    height: 500px;
     overflow: hidden;
     margin-top: 300px;
   }
@@ -1071,7 +1071,7 @@ h3 {
     background-size: cover;
     background-position: center;
     border-radius: 8px;
-    min-height: 475px;
+    min-height: 250px;
     -ms-transition: transform 0.7s cubic-bezier(.4,.2,.2,1);
     transition: transform 0.7s cubic-bezier(.4,.2,.2,1);
     -webkit-transition: transform 0.7s cubic-bezier(.4,.2,.2,1);
@@ -1137,11 +1137,11 @@ h3 {
   }
   
   .flip-box-header {
-    font-size: 34px;
+    font-size: 20px;
   }
   
   .flip-box p {
-    font-size: 20px;
+    font-size: 16px;
     line-height: 1.5em;
   }
   
