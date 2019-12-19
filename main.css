@@ -472,7 +472,7 @@ img {
 /*Start reusable*/
 .container {
     width: 90%;
-    max-width: 120rem;
+    max-width: 100rem;
     height: 100%;
     margin: 0 auto;
     position: relative;
@@ -768,48 +768,6 @@ li {
 
 /*End about*/
 
-/*Start services*/
-.my-skills {
-    margin-top: 10rem;
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
-    grid-gap: 2.5rem;
-    text-align: center;
-}
-
-.skill {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    padding: 2rem;
-}
-
-.skill h1 {
-    text-transform: uppercase;
-    letter-spacing: 2px;
-    margin: 2rem -2px 2rem 0;
-}
-
-.icon-container {
-    width: 10rem;
-    height: 10rem;
-    border: 3px solid rgb(1, 134, 97);
-    background-color: transparent;
-    display: flex;
-    margin-bottom: 2rem;
-    transform: rotate(45deg);
-}
-
-.icon-container i {
-    color: rgb(1, 134, 97);
-    font-size: 5rem;
-    margin: auto;
-    transform: rotate(-45deg);
-}
-
-/*End services*/
-
 /*Start publication*/
 .portfolio-item {
     display: flex;
@@ -1035,7 +993,7 @@ h3 {
   }
 
   .listoftools {
-      color: #b17930;cur
+      color: #b17930;
       font-family: 'IBM Plex Mono', monospace;
   }
 
@@ -1048,7 +1006,7 @@ h3 {
     align-items: center;
     display: grid;
     grid-template-columns: repeat(3, 0fr);
-  grid-auto-rows: minmax(100px, auto);
+    grid-auto-rows: minmax(100px, auto);
   /* display: flex;
     flex-direction: row; */
     justify-content: space-around;
@@ -1066,7 +1024,8 @@ h3 {
   .box-item {
     position: relative;
     -webkit-backface-visibility: hidden;
-    width: 300px;
+    width: 330px;
+    padding: 10px;
     max-width: 100%;
   }
   
@@ -1165,7 +1124,7 @@ h3 {
   .flip-box-button {
     background-color: transparent;
     border: 2px solid #fff;
-    border-radius: 1px;
+    border-radius: 15px;
     color: #fff;
     cursor: pointer;
     font-size: 15px;
@@ -1174,6 +1133,7 @@ h3 {
     padding: 15px 20px;
     font-family: 'IBM Plex Mono', monospace;
   }
+
 /*portfolio ends*/
 
 /*Start footer*/
