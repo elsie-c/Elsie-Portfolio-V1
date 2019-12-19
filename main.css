@@ -32,6 +32,10 @@ header {
     margin-right: auto;
 }
 
+.profileimage {
+    border-radius: 10px;
+}
+
 .nav__links {
     list-style: none;
 }
@@ -169,7 +173,7 @@ header {
 }
 
 .about {
-    font-size: 16px;
+    font-size: 13px;
 }
 
 .move-me {
@@ -474,7 +478,7 @@ img {
     width: 90%;
     max-width: 100rem;
     height: 100%;
-    margin: 0 auto;
+    margin: 100px auto;
     position: relative;
 }
 
@@ -849,7 +853,7 @@ li {
     color: white;
     font-family: 'IBM Plex Mono', monospace;
     font-size: 14px;
-    padding: 15px 25px;
+    padding: 15px 15px;
     width: 100%;
     border: none;
     outline: none;
