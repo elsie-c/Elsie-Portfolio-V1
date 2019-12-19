@@ -1035,7 +1035,7 @@ h3 {
   }
 
   .listoftools {
-      color: #b17930;
+      color: #b17930;cur
       font-family: 'IBM Plex Mono', monospace;
   }
 
@@ -1046,11 +1046,15 @@ h3 {
   
   .box-container {
     align-items: center;
-    display: flex;
-    flex-direction: row;
+    display: grid;
+    grid-template-columns: repeat(3, 0fr);
+  grid-auto-rows: minmax(100px, auto);
+  /* display: flex;
+    flex-direction: row; */
     justify-content: space-around;
-    padding: 10px 15px;
+    /* padding: 1px 15px; */
     width: 100%;
+    justify-content: space-evenly;
   }
   
   @media screen and (min-width:1380px) {
@@ -1062,8 +1066,7 @@ h3 {
   .box-item {
     position: relative;
     -webkit-backface-visibility: hidden;
-    width: 415px;
-    margin-bottom: 35px;
+    width: 300px;
     max-width: 100%;
   }
   
