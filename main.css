@@ -625,7 +625,7 @@ li {
     content: "";
     display: block;
     width: 1px;
-    height: 90px;
+    height: 150px;
     background-color: rgb(168, 178, 209);
     margin: 0px auto;
     box-sizing: inherit;
