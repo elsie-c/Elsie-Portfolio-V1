@@ -40,6 +40,15 @@ header {
     color:  #db963b;
 }
 
+.in-para-link {
+    cursor: pointer;
+}
+
+.in-para-link:hover{
+    color: #dbb582;
+    transition: 0.5s;
+}
+
 .nav__links {
     list-style: none;
 }
@@ -901,7 +910,7 @@ ul {
 }
 
 .tabcontent h1,
-h2 {
+h3 {
     color: #b17930;
     font-weight: none;
 }
