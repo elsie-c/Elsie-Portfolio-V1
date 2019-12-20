@@ -844,7 +844,6 @@ li {
 }
 
 .work-exp-content {
-    padding: 20px;
     margin: 0px;
     border: 10px transparent;
 }
@@ -902,6 +901,13 @@ li {
     color: #b17930;
     background-color: rgb(37, 37, 37);
 }
+
+.tabcontent h1, h2, h3, ul {
+    margin: 0px 15px;
+    border: none;
+    padding: none;
+}
+
 
 .tabcontent h1,
 h2,h3,
