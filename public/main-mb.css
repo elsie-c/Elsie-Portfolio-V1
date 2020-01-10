@@ -26,7 +26,7 @@ header {
     padding: 0px 2.5%;
     position: fixed;
     background-color: black;
-    z-index: 9999;
+    z-index: 999999;
     border-bottom: 1px solid #db963b;
     font-size: 14px;
     font-family: 'IBM Plex Mono', monospace;
@@ -673,6 +673,7 @@ h3 {
   }
   
   .box-container {
+    z-index: 1;
     align-items: center;
     display: grid;
     grid-template-columns: repeat(1, 0fr);
