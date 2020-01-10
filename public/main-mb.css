@@ -18,13 +18,65 @@ header {
     display: flex;
     justify-content: flex-end;
     align-items: center;
-    padding: 10px 2.5%;
+    height: 120px;
+    padding: 0px 2.5%;
     position: fixed;
     background-color: black;
     z-index: 9999;
     border-bottom: 1px solid #db963b;
     font-size: 14px;
     font-family: 'IBM Plex Mono', monospace;
+}
+
+.logo {
+    cursor: pointer;
+    width:60px;
+    height:60px;
+    margin-right: 3em;
+}
+
+.nav__links{
+    display: inline-block;
+}
+
+
+.nav__links li {
+    display: flex;
+    padding: 0px;
+    margin: 10px 0;
+}
+
+.nav__links li a {
+    transition: all 0.3s ease 0s;
+    color: #db963b;
+    font-size: 12px;
+    padding: 0;
+    margin: 0;
+}
+
+.nav__links li a:hover {
+    transition: all 0.3s ease 0s;
+    color: #ffffff;
+}
+
+.resume-button {
+    padding: 10px 10px;
+    margin-left: 50px;
+    margin-right: 25px;
+    background-color: transparent;
+    border: 1px solid #db963b;
+    border-radius: 0px;
+    cursor: pointer;
+    color: #db963b;
+    font-size: 14px;
+    font-family: 'IBM Plex Mono', monospace;
+    transition: all 0.3 ease 0s;
+}
+
+.resume-button:hover {
+    background-color: #4b3313;
+    color: #db963b;
+    transition: all 500ms ease 100ms;
 }
 
 .skillname {
@@ -36,10 +88,6 @@ header {
 }
 
 
-.logo {
-    cursor: pointer;
-    margin-right: auto;
-}
 
 .profileimage {
     border-radius: 10px;
@@ -56,46 +104,6 @@ header {
 .in-para-link:hover{
     color: #dbb582;
     transition: 0.5s;
-}
-
-.nav__links {
-    list-style: none;
-}
-
-.nav__links li {
-    display: inline-block;
-    padding: 10px;
-    margin: 5px;
-}
-
-.nav__links li a {
-    transition: all 0.3s ease 0s;
-    color: #db963b;
-    margin: 0;
-}
-
-.nav__links li a:hover {
-    transition: all 0.3s ease 0s;
-    color: #ffffff;
-}
-
-.resume-button {
-    padding: 9px 15px;
-    margin-left: 50px;
-    background-color: transparent;
-    border: 1px solid #db963b;
-    border-radius: 0px;
-    cursor: pointer;
-    color: #db963b;
-    font-size: 14px;
-    font-family: 'IBM Plex Mono', monospace;
-    transition: all 0.3 ease 0s;
-}
-
-.resume-button:hover {
-    background-color: #4b3313;
-    color: #db963b;
-    transition: all 500ms ease 100ms;
 }
 
 /*end header/navbar setting*/
@@ -318,12 +326,6 @@ object:hover {
     font-weight: 300;
 }
 
-.logo {
-    width: 70px;
-    height: 70px;
-    padding: 10px;
-}
-
 .font {
     font-family: 'IBM Plex Mono', monospace;
 }
@@ -469,7 +471,7 @@ object:hover {
 }
 
 html {
-    font-size: 10px;
+    font-size: 16px;
     font-family: 'Oswald', monospace;
     color: #eee;
 }
@@ -556,11 +558,8 @@ img {
 /*End reusable*/
 
 /*Start header*/
-/* header {
-    width: 100%;
-    height: 100vh;
-} */
-/* .top-nav {
+
+.top-nav {
     width: 100%;
     height: 100vh;
     position: fixed;
@@ -570,7 +569,7 @@ img {
     border-bottom-left-radius: 100%;
     transition: all 650ms;
     z-index: 50;
-} */
+}
 
 /*LEFTBAR */
 
@@ -717,36 +716,6 @@ li {
 .menu-toggler.open {
     transform: rotate(-45deg);
 }
-
-/* .bar {
-    background: linear-gradient(to right, #db963b, #eee);
-    width: 100%;
-    height: 4px;
-    border-radius: .8rem;
-}
-
-.bar.half {
-    width: 50%;
-}
-
-.bar.start {
-    transform-origin: right;
-    transition: transform 650ms cubic-bezier(0.54, -0.81, 0.57, 0.57);
-}
-
-.open .bar.start {
-    transform: rotate(-450deg) translateX(0.8rem);
-}
-
-.bar.end {
-    align-self: flex-end;
-    transform-origin: left;
-    transition: transform 650ms cubic-bezier(0.54, -0.81, 0.57, 0.57);
-}
-
-.open .bar.end {
-    transform: rotate(-450deg) translateX(-.8rem);
-} */
 
 .title-heading h1 {
     font-size: 10rem;
@@ -1203,130 +1172,3 @@ h3 {
 }
 
 /*End footer*/
-
-/*Start media queries*/
-
-@media screen and (max-width: 768px) {
-    body {
-        background: #1E1F20 no-repeat center fixed;
-        background-size: cover;
-    }
-
-    .landing-text h1 {
-        font-size: 15rem;
-    }
-
-    .landing-text h6 {
-        font-size: 1.7rem;
-    }
-
-    .nav-list {
-        flex-direction: column;
-    }
-
-    li {
-        margin: 2rem 0;
-    }
-
-    nav-link {
-        font-size: 4.5rem;
-    }
-
-    .about-heading h1 {
-        font-size: 8rem;
-    }
-
-    .section-heading h1 {
-        font-size: 3rem;
-    }
-
-    .about-details .nav-list {
-        flex-direction: initial;
-    }
-
-    .about-details li {
-        margin: 0 2rem;
-    }
-
-    .icon-container {
-        width: 7rem;
-        height: 7rem;
-    }
-
-    .icon-container i {
-        font-size: 4rem;
-    }
-
-    .timeline ul {
-        margin: 0 0 0 auto;
-    }
-
-    .timeline .date::before {
-        left: -20rem;
-    }
-
-    .timeline .date::after {
-        left: -6rem;
-    }
-}
-
-
-@media screen and (max-width: 600px) {
-    .menu-toggler {
-        top: 2rem;
-        right: 2rem;
-    }
-
-    .landing-text h1 {
-        font-size: 8rem;
-
-    }
-
-    .landing-text h6 {
-        font-size: 1.4rem;
-    }
-
-    .nav-link {
-        font-size: 3.5rem;
-    }
-
-    .about .container {
-        flex-direction: column;
-    }
-
-    .profile-img {
-        margin: 0 0 7rem 0;
-    }
-
-    .portfolio-item {
-        flex-direction: column;
-    }
-
-    .portfolio-img {
-        margin: 0 0 2rem 0;
-        order: 1;
-    }
-
-    .portfolio-description {
-        margin: 0;
-        order: 2;
-    }
-
-    .timeline p {
-        font-size: 1.6rem;
-    }
-
-    .timeline .date::before {
-        font-size: 1.3rem;
-    }
-
-    form {
-        width: 100%;
-    }
-
-    .up {
-        right: 2rem;
-    }
-}
-
-/*End media queries*/
