@@ -8,7 +8,7 @@ Some minor issues:
 - Flickering when the portfolio container flips back and forth on mobile browser. Don't observe it on desktop browser (chrome).
 - 'writing-mode: vertical-rl' dosnt' work. Want to add it onto the [experience] tab section.
 
-<img width="48px" src="/elsiemade-page1.png">
-<img style="width:10px" src="/elsiemade-page2.png">
-<img style="width:10px" src="/elsiemade-page3.png">
-<img style="width:10px" src="/elsiemade-page4.png">
+<img width="33%" src="/elsiemade-page1.png">
+<img style="33%" src="/elsiemade-page2.png">
+<img style="33%" src="/elsiemade-page3.png">
+<img style="33%" src="/elsiemade-page4.png">
