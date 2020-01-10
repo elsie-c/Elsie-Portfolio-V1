@@ -1,7 +1,6 @@
-/*font import*/
 @import url('https://fonts.googleapis.com/css?family=Cutive+Mono|IBM+Plex+Mono|Oswald|Roboto|Roboto+Condensed|Staatliches|Roboto|Roboto+Mono|Public+Sans&display=swap');
 
-/*html background/denote universal selector*/
+/*!GLOBAL FEATURE */
 *,
 *:before,
 *:after {
@@ -11,12 +10,65 @@
     margin: 0;
     padding: 0;
 }
-
 .section{
     max-width: 375px;
+    padding: 6rem 0;
+}
+body {
+    width: 100%;
+    height: 100%;
+    background: rgb(14, 15, 15) no-repeat center fixed;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+}
+a {
+    text-decoration: none;
+    color: #eee;
+
+}
+.container {
+    width: 80%;
+    max-width: 100rem;
+    height: 100%;
+    margin: 50px auto;
+    position: relative;
+}
+.section-heading {
+    text-align: center;
+    margin-bottom: 10rem;
+}
+.section-heading h1 {
+    font-size: 3.5rem;
+    color: #db963b;
+    text-transform: uppercase;
+    font-weight: 300;
+    position: relative;
+    margin-bottom: 1rem;
+}
+.section-heading h1::before,
+.section-heading h1::after {
+    content: '';
+    position: absolute;
+    bottom: -0.5rem;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: rgba(255, 255, 255, 0.75);
+}
+.section-heading h1::before {
+    width: 5rem;
+    height: 3px;
+    border-radius: 0.8rem;
+}
+.section-heading h6 {
+    font-size: 0.8rem;
+    font-weight: 300;
+    font-family: 'Courier New', Courier, monospace;
 }
 
-/*header/navbar setting*/
+
+
+/*!HEADER*/
 header {
     width: 100%;
     display: flex;
@@ -31,24 +83,20 @@ header {
     font-size: 14px;
     font-family: 'IBM Plex Mono', monospace;
 }
-
 .logo {
     cursor: pointer;
     width:60px;
     height:60px;
     margin-right: 3em;
 }
-
 .nav__links{
     display: inline-block;
 }
-
 .nav__links li {
     display: flex;
     padding: 0px;
     margin: 10px 0;
 }
-
 .nav__links li a {
     transition: all 0.3s ease 0s;
     color: #db963b;
@@ -56,12 +104,10 @@ header {
     padding: 0;
     margin: 0;
 }
-
 .nav__links li a:hover {
     transition: all 0.3s ease 0s;
     color: #ffffff;
 }
-
 .resume-button {
     padding: 10px 10px;
     margin-left: 50px;
@@ -75,29 +121,74 @@ header {
     font-family: 'IBM Plex Mono', monospace;
     transition: all 0.3 ease 0s;
 }
-
 .resume-button:hover {
     background-color: #4b3313;
     color: #db963b;
     transition: all 500ms ease 100ms;
 }
-/*end of header*/
 
-/*cube & main CONTENT*/
 
-#wrapper {
-    padding-top: 5%;
-}
-
+/*!FONT PAGE*/
 .main-content {
     margin-top: 100px;
 }
+.block {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: space-evenly;
+    -ms-flex-pack: space-evenly;
+    justify-content: space-evenly;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+}
+.title-heading h1 {
+    font-size: 5rem;
+    font-family: 'Oswald', sans-serif;
+    text-transform: lowercase;
+    background: #db963b;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    padding: 0rem;
+    user-select: none;
+}
+.title-heading h6 {
+    font-size: 2rem;
+    font-weight: 300;
+    max-width: 375px;
+}
+.quotation {
+    -webkit-perspective: 500px;
+    perspective: 500px;
+    -webkit-perspective-origin: center center;
+    perspective-origin: center center;
+    display: flex;
+    align-items: center;
+    margin: 1em;
+}
+.textQuote {
+    color: #db963b;
+    font-size: 12px;
+    font-weight: 300;
+    font-family: 'IBM Plex Mono', monospace;
+    text-align: center;
+}
 
+
+/*!CUBE*/
+#wrapper {
+    padding-top: 5%;
+}
 .viewport {
-    -webkit-perspective: 800px;
-    -moz-perspective: 800px;
-    -ms-perspective: 800px;
-    -o-perspective: 800px;
+    -webkit-transform: scale(0.6, 0.6);
+    -moz-transform: scale(0.6, 0.6);
+    -ms-transform: scale(0.6, 0.6);
+    -o-transform: scale(0.6, 0.6);
     perspective: 800px;
     -webkit-perspective-origin: 50% 200px;
     -moz-perspective-origin: 50% 200px;
@@ -108,10 +199,9 @@ header {
     -moz-transform: scale(0.8, 0.8);
     -ms-transform: scale(0.8, 0.8);
     -o-transform: scale(0.8, 0.8);
-    transform: scale(0.8, 0.8);
+    transform: scale(0.6, 0.6);
     -webkit-box-reflect: below 150px -webkit-gradient(linear, right top, right bottom, from(transparent), color-stop(40%, transparent), to(rgba(255, 255, 255, 0.1)));
 }
-
 .cube {
     position: relative;
     margin: 0 auto;
@@ -129,7 +219,6 @@ header {
     transform: rotateX(136deg) rotateY(1122deg);
 
 }
-
 .cube>div {
     overflow: hidden;
     position: absolute;
@@ -141,7 +230,6 @@ header {
     -moz-touch-callout: none;
     -ms-touch-callout: none;
     -o-touch-callout: none;
-    touch-callout: none;
     -webkit-user-select: none;
     -moz-user-select: none;
     -ms-user-select: none;
@@ -149,7 +237,6 @@ header {
     user-select: none;
 
 }
-
 .cube>div>div.cube-image {
     width: 200px;
     height: 200px;
@@ -170,19 +257,15 @@ header {
     transition: color 600ms;
     animation: spinning 2s infinite;
 }
-
 .cube>div>div.cube-image.active {
     color: rgb(0, 0, 0);
 }
-
 .cube>div:hover {
     cursor: pointer;
 }
-
 .cube>div:active {
     cursor: pointer;
 }
-
 .cube>div:first-child {
     -webkit-transform: rotateX(90deg) translateZ(100px);
     -moz-transform: rotateX(90deg) translateZ(100px);
@@ -191,7 +274,6 @@ header {
     transform: rotateX(90deg) translateZ(100px);
     outline: 1px solid transparent;
 }
-
 .cube>div:nth-child(2) {
     -webkit-transform: translateZ(100px);
     -moz-transform: translateZ(100px);
@@ -200,7 +282,6 @@ header {
     transform: translateZ(100px);
     outline: 1px solid transparent;
 }
-
 .cube>div:nth-child(3) {
     -webkit-transform: rotateY(90deg) translateZ(100px);
     -moz-transform: rotateY(90deg) translateZ(100px);
@@ -209,7 +290,6 @@ header {
     transform: rotateY(90deg) translateZ(100px);
     outline: 1px solid transparent;
 }
-
 .cube>div:nth-child(4) {
     -webkit-transform: rotateY(180deg) translateZ(100px);
     -moz-transform: rotateY(180deg) translateZ(100px);
@@ -218,7 +298,6 @@ header {
     transform: rotateY(180deg) translateZ(100px);
     outline: 1px solid transparent;
 }
-
 .cube>div:nth-child(5) {
     -webkit-transform: rotateY(-90deg) translateZ(100px);
     -moz-transform: rotateY(-90deg) translateZ(100px);
@@ -227,7 +306,6 @@ header {
     transform: rotateY(-90deg) translateZ(100px);
     outline: 1px solid transparent;
 }
-
 .cube>div:nth-child(6) {
     -webkit-transform: rotateX(-90deg) rotate(180deg) translateZ(100px);
     -moz-transform: rotateX(-90deg) rotate(180deg) translateZ(100px);
@@ -236,28 +314,6 @@ header {
     transform: rotateX(-90deg) rotate(180deg) translateZ(100px);
     outline: 1px solid transparent;
 }
-
-object {
-    opacity: 0.3;
-}
-
-object:hover {
-    opacity: 1;
-}
-
-@media (max-width: 640px) {
-    .viewport {
-        -webkit-transform: scale(0.6, 0.6);
-        -moz-transform: scale(0.6, 0.6);
-        -ms-transform: scale(0.6, 0.6);
-        -o-transform: scale(0.6, 0.6);
-        transform: scale(0.6, 0.6);
-    }
-
-
-}
-
-
 .side {
     position: absolute;
     width: 50px;
@@ -269,7 +325,6 @@ object:hover {
     -webkit-animation: color 7s cubic-bezier(0.75, 0, 0.5, 1) infinite;
     animation: color 7s cubic-bezier(0.75, 0, 0.5, 1) infinite;
 }
-
 @-webkit-keyframes rotate {
     0% {
         -webkit-transform: rotateX(90deg);
@@ -296,7 +351,6 @@ object:hover {
         transform: rotateX(90deg);
     }
 }
-
 @keyframes rotate {
     0% {
         -webkit-transform: rotateX(90deg);
@@ -323,7 +377,6 @@ object:hover {
         transform: rotateX(90deg);
     }
 }
-
 @-webkit-keyframes color {
     0% {
         border: 2px solid #333333;
@@ -350,7 +403,6 @@ object:hover {
         background: #db963b;
     }
 }
-
 @keyframes color {
     0% {
         border: 2px solid #333333;
@@ -377,75 +429,17 @@ object:hover {
         background: #db963b;
     }
 }
-
 /*# sourceMappingURL=spinner.css.map */
 
 
-/*title-heading*/
-.title-heading h1 {
-    font-size: 5rem;
-    font-family: 'Oswald', sans-serif;
-    text-transform: lowercase;
-    background: #db963b;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    padding: 0rem;
-    user-select: none;
-}
-
-.title-heading h6 {
-    font-size: 2rem;
-    font-weight: 300;
-    max-width: 375px;
-}
-
-.quotation {
-    -webkit-perspective: 500px;
-    perspective: 500px;
-    -webkit-perspective-origin: center center;
-    perspective-origin: center center;
-    display: flex;
-    align-items: center;
-    margin: 1em;
-}
-
+/*!QUOTE BELOW CUBE*/
 .move-me {
     margin: 100px;
     position: relative;
 }
 
-.block {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: space-evenly;
-    -ms-flex-pack: space-evenly;
-    justify-content: space-evenly;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-    -ms-flex-direction: column;
-    flex-direction: column;
-    -webkit-box-align: center;
-    -ms-flex-align: center;
-    align-items: center;
-}
 
-.textQuote {
-    color: #db963b;
-    font-size: 12px;
-    font-weight: 300;
-    font-family: 'IBM Plex Mono', monospace;
-    text-align: center;
-}
-
-/*end of front page*/
-
-
-
-/*side-bar SOCIAL LINK*/
-/*LEFTBAR */
-
-/*vertical line sidebar (left)*/
+/*!SIDE RIGHT - SOCIAL MEDIA LINK*/
 .social-media {
     position: fixed;
     width: 44px;
@@ -456,18 +450,15 @@ object:hover {
     overflow-x: hidden;
     padding: 0;
     display: flex;
-    flex-direction: column;s
+    flex-direction: column;
 }
-
 .social-media i {
     font-size: 1.2rem;
     transition: color 650ms;
 }
-
 .social-media i:hover {
     color: #db963b;
 }
-
 .vl-left{
     content: "";
     display: block;
@@ -477,7 +468,6 @@ object:hover {
     margin: 0px auto;
     box-sizing: inherit;
 }
-
 .left-sticky {
     align-items: center;
     justify-content: center;
@@ -489,7 +479,6 @@ object:hover {
     width: 100%;
     height: 100%;
 }
-
 .left-sticky a {
     display: flex;
     flex-direction: column;
@@ -497,17 +486,8 @@ object:hover {
     padding: 2px;
 }
 
-/*right STICKY - EMAIL*/
-.vl-right {
-    content: "";
-    display: block;
-    width: 1px;
-    height: 300px;
-    background-color: rgb(168, 178, 209);
-    margin: 0px auto;
-    box-sizing: inherit;
-}
 
+/*!SIDE LEFT - EMAIL --*/
 .main-right {
     width: 44px;
     position: fixed;
@@ -519,7 +499,6 @@ object:hover {
     padding: 0;
     display: block;
 }
-
 .email {
     writing-mode: vertical-rl;
     padding-bottom: 10px;
@@ -530,19 +509,27 @@ object:hover {
     display: flex;
     align-items: center;
 }
-
 .email:hover {
     color: #db963b;
     transition: 0.5s;
     cursor: pointer;
 }
+.vl-right {
+    content: "";
+    display: block;
+    width: 1px;
+    height: 300px;
+    background-color: rgb(168, 178, 209);
+    margin: 0px auto;
+    box-sizing: inherit;
+}
 
-/*ABOUT SECTION*/
+
+/*! ABOUT */
 .aboutSection {
     display: flex;
     flex-direction: column;
 }
-
 .paragraph-section {
     font-family: 'IBM Plex Mono', monospace;
     line-height: 18px;
@@ -550,20 +537,18 @@ object:hover {
     text-justify: inter-word;
     font-size: 11px;
 }
-
 .emphasis_intro{
     color:  #db963b;
 }
-
 .profile-img {
     flex: 1;
     margin-right: 5rem;
+    width: 100%;
 
 }
-/*End about*/
 
-/*EXPERIENCE*/
-/* Style the tab */
+
+/*!EXPERIENCE*/
 .experience {
     display: flex;
     flex-direction: row;
@@ -571,7 +556,6 @@ object:hover {
     margin: 0;
     padding: 0;
 }
-
 .tab {
     float: right;
     background-color: #2A2B2D;
@@ -579,9 +563,6 @@ object:hover {
     display: flex;
     flex-direction: row;
 }
-
-/* Style the buttons inside the tab */
-
 .tab button {
     display: flex;
     background-color: inherit;
@@ -598,8 +579,6 @@ object:hover {
     transition: 0.3s;
     height: 100px;
 }
-
-/* Change background color of buttons on hover */
 .tab button:hover {
     background-color: rgb(37, 37, 37);
     border-top: 10px solid#b17930;
@@ -607,10 +586,6 @@ object:hover {
     font-size: 10px;
     font-family: 'IBM Plex Mono', monospace;
 }
-
-/* Create an active/current "tab button" class */
-/* Style the tab content */
-
 .tabcontent {
     float: left;
     padding: 10px 20px;
@@ -620,58 +595,52 @@ object:hover {
     border-left: none;
     height: 25rem;
 }
-
 .tablinks .active {
     color: #b17930;
     background-color: rgb(37, 37, 37);
 }
-
 .tabcontent h1,
 h2,h3,
 ul {
     font-family: 'IBM Plex Mono', monospace;
 }
-
 .tabcontent h1,
 h3 {
     color: #b17930;
     font-weight: none;
 }
-
 .tabcontent h1 {
     font-size: 0.8em;
 }
-
 .tabcontent h2, h3 {
     font-size: 0.7em;
 }
-
 .tabcontent ul {
     font-size: 10px;
 }
-/*end workexperience*/
 
-/*PROTFOLIO*/
-/*portfolio starts*/
+
+
+/*!PORTFOLIO*/
+.in-para-link {
+    cursor: pointer;
+}
+.in-para-link:hover{
+    color: #dbb582;
+    transition: 0.5s;
+}
+
   .text-center {
     text-align: center;
   }
-  
   .color-white {
     color: #fff;
   }
-
   .listoftools {
       color: #b17930;
       font-family: 'IBM Plex Mono', monospace;
       font-size: 10px;
   }
-
-  .back-para {
-      font-size: 10px;
-      font-family: 'IBM Plex Mono', monospace;
-  }
-  
   .box-container {
     z-index: 1;
     align-items: center;
@@ -682,7 +651,6 @@ h3 {
     width: 100%;
     justify-content: space-evenly;
   }
-  
   .box-item {
     position: relative;
     -webkit-backface-visibility: hidden;
@@ -691,7 +659,6 @@ h3 {
     padding: 10px;
     max-width: 100%;
   }
-  
   .flip-box {
     -ms-transform-style: preserve-3d;
     transform-style: preserve-3d;
@@ -699,7 +666,6 @@ h3 {
     perspective: 1000px;
     -webkit-perspective: 1000px;
   }
-  
   .flip-box-front,
   .flip-box-back {
     background-size: cover;
@@ -712,7 +678,6 @@ h3 {
     -webkit-backface-visibility: hidden;
     backface-visibility: hidden;
   }
-  
   .flip-box-front {
     -ms-transform: rotateY(0deg);
     -webkit-transform: rotateY(0deg);
@@ -721,7 +686,6 @@ h3 {
     -ms-transform-style: preserve-3d;
     transform-style: preserve-3d;
   }
-  
   .flip-box:hover .flip-box-front {
     -ms-transform: rotateY(-180deg);
     -webkit-transform: rotateY(-180deg);
@@ -730,7 +694,6 @@ h3 {
     -ms-transform-style: preserve-3d;
     transform-style: preserve-3d;
   }
-  
   .flip-box-back {
     position: absolute;
     top: 0;
@@ -744,7 +707,6 @@ h3 {
     -ms-transform-style: preserve-3d;
     transform-style: preserve-3d;
   }
-  
   .flip-box:hover .flip-box-back {
     -ms-transform: rotateY(0deg);
     -webkit-transform: rotateY(0deg);
@@ -753,7 +715,6 @@ h3 {
     -ms-transform-style: preserve-3d;
     transform-style: preserve-3d;
   }
-  
   .flip-box .inner {
     position: absolute;
     left: 0;
@@ -769,22 +730,15 @@ h3 {
     -ms-transform: translateY(-50%) translateZ(60px) scale(.94);
     top: 50%;
   }
-  
   .flip-box-header {
     font-size: 12px;
   }
-  
   .flip-box p {
     font-size: 0.7em;
     line-height: 1em;
     margin-top: 15px;
     font-family: 'IBM Plex Mono', monospace;
   }
-  
-  .flip-box-img {
-    margin-top: 35px;
-  }
-  
   .flip-box-button {
     background-color: transparent;
     border:none;
@@ -796,7 +750,6 @@ h3 {
     padding: 15px 20px;
     font-family: 'IBM Plex Mono', monospace;
   }
-
   .flip-box-button:hover {
     border-radius: 15px;
     color: black;
@@ -810,151 +763,14 @@ h3 {
   }
 
 
-/*portfolio ends*/
-
-
-
-
-
-
-
-
-
-
-
-
-
-.in-para-link {
-    cursor: pointer;
-}
-
-.in-para-link:hover{
-    color: #dbb582;
-    transition: 0.5s;
-}
-
-/*end header/navbar setting*/
-/*main content*/
-
-
-
-
-
-/*Start global*/
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-
-}
-
-html {
-    font-size: 16px;
-    font-family: 'Oswald', monospace;
-    color: #eee;
-}
-
-body {
-    width: 100%;
-    height: 100%;
-    background: rgb(14, 15, 15) no-repeat center fixed;
-    background-size: cover;
-    display: flex;
-    flex-direction: column;
-}
-
-section {
-    padding: 6rem 0;
-}
-
-a {
-    text-decoration: none;
-    color: #eee;
-
-}
-
-img {
-    width: 100%;
-}
-
-/*End global*/
-
-/*Start REUSABLE*/
-.container {
-    width: 80%;
-    max-width: 100rem;
-    height: 100%;
-    margin: 50px auto;
-    position: relative;
-}
-
-.section-heading {
-    text-align: center;
-    margin-bottom: 10rem;
-}
-
-.section-heading h1 {
-    font-size: 3.5rem;
-    color: #db963b;
-    text-transform: uppercase;
-    font-weight: 300;
-    position: relative;
-    margin-bottom: 1rem;
-}
-
-.section-heading h1::before,
-.section-heading h1::after {
-    content: '';
-    position: absolute;
-    bottom: -0.5rem;
-    left: 50%;
-    transform: translateX(-50%);
-    background-color: rgba(255, 255, 255, 0.75);
-}
-
-.section-heading h1::before {
-    width: 5rem;
-    height: 3px;
-    border-radius: 0.8rem;
-}
-
-.section-heading h6 {
-    font-size: 0.8rem;
-    font-weight: 300;
-    font-family: 'Courier New', Courier, monospace;
-}
-
-.has-margin-right {
-    margin-right: 5rem;
-}
-/*End reusable*/
-
-
-
-
-
-
-
-
-
-
-
-
-/*contact*/
+/*!CONTACT*/
 .contact {
     font-size: 16px;
     text-align: center;
 }
-/*contact ends*/
 
 
-
-
-
-
-
-
-/*Start footer*/
+/*!FOOTER*/
 .copyright {
     width: 100%;
     text-align: center;
@@ -963,10 +779,7 @@ img {
     padding: 1rem 0;
     position: relative;
 }
-
 .copyright p {
     font-size: 0.7rem;
     color: #db963b
 }
-
-/*End footer*/
