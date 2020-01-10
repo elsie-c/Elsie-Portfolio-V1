@@ -7,3 +7,9 @@ My first website v1.0 - portfolio.
 Some minor issues:
 - Flickering when the portfolio container flips back and forth on mobile browser. Don't observe it on desktop browser (chrome).
 - 'writing-mode: vertical-rl' dosnt' work. Want to add it onto the [experience] tab section.
+
+#showcase 
+<img src="/elsiemade-page1.png">
+<img src="/elsiemade-page2.png">
+<img src="/elsiemade-page3.png">
+<img src="/elsiemade-page4.png">
