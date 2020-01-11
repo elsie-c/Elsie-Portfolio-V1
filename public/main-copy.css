@@ -1,0 +1,407 @@
+header {
+    padding: 10px 2.5%;
+    z-index: 999999;
+    border-bottom: 1px solid #db963b;
+}
+
+.logo {
+    margin-right: auto;
+}
+
+.nav__links {
+    list-style: none;
+}
+
+.nav__links li {
+    display: inline-block;
+    padding: 10px;
+    margin: 5px;
+}
+
+.nav__links li a {
+    font-size : 16px;
+}
+
+.resume-button {
+    padding: 9px 15px;
+    cursor: pointer;
+    color: #db963b;
+}
+
+.main-content {
+    margin-top: 150px;
+}
+
+.paragraph-section {
+    font-family: 'IBM Plex Mono', monospace;
+    line-height: 20px;
+    text-align: justify;
+    text-justify: inter-word;
+}
+
+.about {
+    font-size: 13px;
+}
+
+.logo {
+    width: 70px;
+    height: 70px;
+    padding: 10px;
+}
+
+p {
+    font-size: 1.8rem;
+    font-weight: 300;
+}
+
+.container {
+    width: 90%;
+    margin: 100px auto;
+}
+
+.section-heading h1::before {
+    width: 10rem;
+ 
+}
+
+.section-heading h6 {
+    font-size: 1.2rem;
+ 
+}
+
+.vl-left{
+    content: "";
+    display: block;
+    width: 1px;
+    height: 300px;
+    background-color: rgb(168, 178, 209);
+    margin: 0px auto;
+    box-sizing: inherit;
+}
+
+.main-left {
+    width: 150px;
+    position: fixed;
+    z-index: 1;
+    top: 550px;
+    left: 0px;
+    background: transparent;
+    overflow-x: hidden;
+    padding: 8px 0;
+    display: flex;
+    flex-direction: column;
+}
+
+.left-sticky {
+    align-items: center;
+    justify-content: center;
+    top: 20px;
+    height: 300px;
+    width: 200px;
+    float: left;
+    display: flex;
+    flex-direction: column;
+}
+
+.left-sticky a {
+    display: flex;
+    flex-direction: column;
+    margin: 10px;
+    padding: 5px;
+}
+
+.social-media i {
+    font-size: 2.5rem;
+}
+
+.main-right {
+    width: 150px;
+    padding: 8px 0;
+}
+
+.email {
+    writing-mode: vertical-rl;
+    font-size: 15px;
+    margin: 15px 67px;
+}
+
+.title-heading h1 {
+    font-size: 10rem;
+    padding: 1rem;
+}
+
+.title-heading h6 {
+    font-size: 2rem;
+    font-weight: 300;
+}
+
+.about .container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.about-heading {
+    text-align: center;
+    text-transform: uppercase;
+    line-height: 0;
+    margin-bottom: 6rem;
+}
+
+.about-heading h1 {
+    font-size: 10rem;
+    opacity: 0.3;
+}
+
+.about-heading h6 {
+    font-size: 2rem;
+    font-weight: 300;
+}
+
+.profile-img {
+    flex: 1;
+    margin-right: 5rem;
+    size: 50%;
+
+}
+
+.about-details {
+    flex: 1;
+}
+
+.experience {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.tab {
+    float: left;
+    border-left: 5px solid#b17930;
+    width: 30%;
+    flex-direction: column;
+    height: 35rem;
+}
+
+.tab button {
+    font-size: 14px;
+    padding: 15px 15px;
+    text-align: left;
+    cursor: pointer;
+}
+
+.tab button:hover {
+    border-left: 20px solid#b17930;
+    font-size: 14px;
+    border-top: none;
+}
+
+.tabcontent {
+    padding: 20px 20px;
+    width: 70%;
+    border-left: none;
+    height: 35rem;
+}
+
+.tabcontent h1 {
+    font-size: 1.8em;
+}
+
+.tabcontent h2, h3 {
+    font-size: 1.3em;
+}
+
+.tabcontent ul {
+    font-size: 13px;
+}
+
+.listoftools {
+    font-size: 12px;
+}
+
+.back-para {
+    font-size: 12px;
+}
+  
+.box-container {
+grid-template-columns: repeat(3, 0fr);
+}
+
+.box-item {
+width: 330px;
+/* height: 170px; */
+}
+  
+.flip-box-front,
+.flip-box-back {
+min-height: 250px;
+}
+
+.flip-box-header {
+font-size: 15px;
+}
+
+.flip-box p {
+font-size: 1.3em;
+}
+  
+.flip-box-button {
+border: 2px solid #fff;
+border-radius: 15px;
+font-size: 15px;
+}
+
+.copyright {
+padding: 1.5rem 0;
+}
+
+.copyright p {
+font-size: 1.2rem;
+}
+
+/* 
+@media screen and (max-width: 768px) {
+    body {
+        background: #1E1F20 no-repeat center fixed;
+        background-size: cover;
+    }
+
+    .landing-text h1 {
+        font-size: 15rem;
+    }
+
+    .landing-text h6 {
+        font-size: 1.7rem;
+    }
+
+    .nav-list {
+        flex-direction: column;
+    }
+
+    li {
+        margin: 2rem 0;
+    }
+
+    nav-link {
+        font-size: 4.5rem;
+    }
+
+    .about-heading h1 {
+        font-size: 8rem;
+    }
+
+    .section-heading h1 {
+        font-size: 3rem;
+    }
+
+    .about-details .nav-list {
+        flex-direction: initial;
+    }
+
+    .about-details li {
+        margin: 0 2rem;
+    }
+
+    .icon-container {
+        width: 7rem;
+        height: 7rem;
+    }
+
+    .icon-container i {
+        font-size: 4rem;
+    }
+
+    .timeline ul {
+        margin: 0 0 0 auto;
+    }
+
+    .timeline .date::before {
+        left: -20rem;
+    }
+
+    .timeline .date::after {
+        left: -6rem;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .menu-toggler {
+        top: 2rem;
+        right: 2rem;
+    }
+
+    .landing-text h1 {
+        font-size: 8rem;
+
+    }
+
+    .landing-text h6 {
+        font-size: 1.4rem;
+    }
+
+    .nav-link {
+        font-size: 3.5rem;
+    }
+
+    .about .container {
+        flex-direction: column;
+    }
+
+    .profile-img {
+        margin: 0 0 7rem 0;
+    }
+
+    .portfolio-item {
+        flex-direction: column;
+    }
+
+    .portfolio-img {
+        margin: 0 0 2rem 0;
+        order: 1;
+    }
+
+    .portfolio-description {
+        margin: 0;
+        order: 2;
+    }
+
+    .timeline p {
+        font-size: 1.6rem;
+    }
+
+    .timeline .date::before {
+        font-size: 1.3rem;
+    }
+
+    form {
+        width: 100%;
+    }
+
+    .up {
+        right: 2rem;
+    }
+}
+
+@media screen and (min-width:1380px) {
+    .box-container {
+      flex-direction: row;
+    }
+  }
+  
+@media (max-width: 420px){
+    section {
+        max-width: 400px;
+    }
+}
+
+@media (max-width: 640px) {
+    .viewport {
+        -webkit-transform: scale(0.6, 0.6);
+        -moz-transform: scale(0.6, 0.6);
+        -ms-transform: scale(0.6, 0.6);
+        -o-transform: scale(0.6, 0.6);
+        transform: scale(0.6, 0.6);
+    }
+
+
+} */
